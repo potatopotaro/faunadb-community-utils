@@ -14,7 +14,9 @@
 
 > Custom FQL and javascript to help you build in FaunaDB.
 
-## Install
+## Getting Started
+
+### Install
 
 ```sh
 npm install --save faunadb-community-utils
@@ -25,6 +27,19 @@ or
 ```sh
 yarn add faunadb-community-utils
 ```
+
+### Example Usage
+```js
+const faunadb = require("faunadb")
+const { CreateNGramIndex } = require("faunadb-community-tools")(faunadb.query)
+
+client.query(CreateNGramIndex({...}))
+```
+
+## Documentation
+
+[Navigate to documentation] (https://github.com/potatopotaro/faunadb-community-utils/blob/master/DOCUMENTATION.md)
+
 
 ## Joining the FaunaDB Community
 If you haven't already, I highly suggest joining the official FaunaDB Community Slack.
