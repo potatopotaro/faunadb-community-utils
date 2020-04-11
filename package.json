@@ -1,6 +1,6 @@
 {
   "name": "faunadb-community-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom FQL and javascript to help you build in FaunaDB.",
   "main": "index.js",
   "scripts": {
