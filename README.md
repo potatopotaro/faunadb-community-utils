@@ -26,10 +26,10 @@ or
 yarn add faunadb-community-utils
 ```
 
-## Joining The FaunaDB Community
+## Joining the FaunaDB Community
 If you haven't already, I highly suggest joining the official FaunaDB Community Slack.
 
-Slack: https://community-invite.fauna.com/
+Slack: https://community-invite.fauna.com
 
 ## 🤝 Contributing
 
