@@ -1,7 +1,7 @@
 const NGramGeneratorLambda = require("../Lambda/NGramGeneratorLambda");
 
 module.exports = (q) => ({
-  targetFieldName,
+  targetFieldPath,
   gramLengthRange,
   name,
   source,
@@ -15,7 +15,7 @@ module.exports = (q) => ({
       fields: Object.assign(source.fields ? source.fields : {}, {
         n_grams: q.Query(
           NGramGeneratorLambda(q)(
-            q.Select(["data", targetFieldName], q.Var("doc")),
+            q.Select(["data", ...targetFieldPath], q.Var("doc")),
             gramLengthRange
           )
         ),

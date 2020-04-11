@@ -21,7 +21,7 @@ Is an extension of `CreateIndex`'s `param_object`. Documented below is only what
 ```js
 {
   // required
-  targetFieldName: "<INSERT_FIELD_NAME>",
+  targetFieldPath: ["field1", ..., "fieldN"],
 
   // optional
   gramLengthRange: [
@@ -39,13 +39,13 @@ Is an extension of `CreateIndex`'s `param_object`. Documented below is only what
 An object containing the metadata about the `CreateIndex` operations used under the hood.
 
 ### Examples
-The CreateIndex operation builds an index on the collection "spells" with the name "new-index".
+The `CreateNGramIndex` operation builds an index on the collection "Location" with the name "locations_by_geohash".
 ```js
 client.query(
   CreateNGramIndex({
     name: "locations_by_geohash",
       gramLengthRange: [3, 17],
-      targetFieldName: "geohash",
+      targetFieldPath: ["geohash"],
       source: Collection("Location"),
       values: [{ field: ["ref"] }],
   })
@@ -54,10 +54,55 @@ client.query(
 ```
 
 ```js
-{ ref: Ref(id=new-index, collection=Ref(id=indexes)),
-  ts: 1527275052756370,
+{
+  ref: Index("locations_by_geohash"),
+  ts: 1586612270730000,
   active: false,
-  partitions: 8,
-  name: 'new-index',
-  source: Ref(id=spells, collection=Ref(id=collections)) }
+  serialized: true,
+  name: "locations_by_geohash",
+  source: {
+    collection: Collection("Location"),
+    fields: {
+      n_grams: Query(
+        Lambda(
+          "doc",
+          Union(
+            Let(
+              {
+                gram_lengths: Filter(
+                  Map(
+                    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+                    Lambda(
+                      "i",
+                      Subtract(
+                        Length(Select(["data", "geohash"], Var("doc"))),
+                        Var("i")
+                      )
+                    )
+                  ),
+                  Lambda("gram_length", GTE(Var("gram_length"), 3))
+                ),
+                n_grams: Map(
+                  Var("gram_lengths"),
+                  Lambda(
+                    "l",
+                    Ngram(
+                      Lowercase(Select(["data", "geohash"], Var("doc"))),
+                      Var("l"),
+                      Var("l")
+                    )
+                  )
+                ),
+              },
+              Var("n_grams")
+            )
+          )
+        )
+      ),
+    },
+  },
+  terms: [{ binding: "n_grams" }],
+  values: [{ field: [Array] }],
+  partitions: 1,
+}
 ```
