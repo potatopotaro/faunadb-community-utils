@@ -38,7 +38,7 @@ client.query(CreateNGramIndex({...}))
 
 ## Documentation
 
-[Navigate to documentation] (https://github.com/potatopotaro/faunadb-community-utils/blob/master/DOCUMENTATION.md)
+[Navigate to documentation](https://github.com/potatopotaro/faunadb-community-utils/blob/master/DOCUMENTATION.md)
 
 
 ## Joining the FaunaDB Community
