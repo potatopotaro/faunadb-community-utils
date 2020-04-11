@@ -1,3 +1,7 @@
+## NOTE
+
+*Info pertaining to native FQL will largely be omitted for conciseness, refer to the native FQL docs for more info regarding native FQL.*
+
 ## CreateNGramIndex
 
 ```js
@@ -5,8 +9,6 @@ CreateNGramIndex( param_object )
 ```
 
 ### Description
-
-*Info pertaining to native FQL will largely be omitted for conciseness, refer to the native FQL docs for more info regarding native FQL.*
 
 Creates an `Index` with an N-Gram binding. Inherits the same constraints that `CreateIndex` has, since it uses `CreateIndex` under the hood. An N-Gram, or at least how it's implemented in FQL (`NGram`, FYI it's undocumented; refer to the community slack and/or FaunaDB blog for more info), offers similar behavior to a prefix search algorithm. A particularly useful application is in querying for geohashes.
 
