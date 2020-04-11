@@ -24,7 +24,11 @@ Is an extension of `CreateIndex`'s `param_object`. Documented below is only what
   targetFieldName: "<INSERT_FIELD_NAME>",
 
   // optional
-  gramLengthRange: [minGramLength = 0, maxGramLength],
+  gramLengthRange: [
+    // must be >= 0
+    minGramLength = 0,
+    maxGramLength
+  ],
 
   // some requirements
   ...restOfCreateIndexParams
