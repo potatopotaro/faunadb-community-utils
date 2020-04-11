@@ -10,8 +10,8 @@
   <a href="https://github.com/potatopotaro/faunadb-community-utils/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/potatopotaro/faunadb-community-utils" />
   </a>
-  <a href="https://twitter.com/potato\_potaro" target="_blank">
-    <img alt="Twitter: potato\_potaro" src="https://img.shields.io/twitter/follow/potato\_potaro.svg?style=social" />
+  <a href="https://twitter.com/potato_potaro" target="_blank">
+    <img alt="Twitter: potato_potaro" src="https://img.shields.io/twitter/follow/potato_potaro.svg?style=social" />
   </a>
 </p>
 
