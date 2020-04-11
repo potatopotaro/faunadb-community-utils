@@ -10,29 +10,26 @@
   <a href="https://github.com/potatopotaro/faunadb-community-utils/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/potatopotaro/faunadb-community-utils" />
   </a>
-  <a href="https://twitter.com/potato_potaro" target="_blank">
-    <img alt="Twitter: potato_potaro" src="https://img.shields.io/twitter/follow/potato_potaro.svg?style=social" />
-  </a>
 </p>
 
 > Custom FQL and javascript to help you build in FaunaDB.
 
-### 🏠 [Homepage](https://github.com/potatopotaro/faunadb-community-utils#readme)
-
 ## Install
 
 ```sh
-npm install
+npm install --save faunadb-community-utils
 ```
 
-## Author
+or
 
-👤 **Taro Woollett-Chiba**
+```sh
+yarn add faunadb-community-utils
+```
 
-* Website: cooksto.com
-* Twitter: [@potato\_potaro](https://twitter.com/potato\_potaro)
-* Github: [@potatopotaro](https://github.com/potatopotaro)
-* LinkedIn: [@taro-woollett-chiba-25a802125](https://linkedin.com/in/taro-woollett-chiba-25a802125)
+## Joining The FaunaDB Community
+If you haven't already, I highly suggest joining the official FaunaDB Community Slack.
+
+Slack: https://community-invite.fauna.com/
 
 ## 🤝 Contributing
 
@@ -46,6 +43,3 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2020 [Taro Woollett-Chiba](https://github.com/potatopotaro).<br />
 This project is [MIT](https://github.com/potatopotaro/faunadb-community-utils/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
