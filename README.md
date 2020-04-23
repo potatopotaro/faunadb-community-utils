@@ -31,9 +31,9 @@ yarn add faunadb-community-utils
 ### Example Usage
 ```js
 const faunadb = require("faunadb")
-const { CreateNGramIndex } = require("faunadb-community-tools")(faunadb.query)
+const { CreateNGramSearchIndex } = require("faunadb-community-tools")(faunadb.query)
 
-client.query(CreateNGramIndex({...}))
+client.query(CreateNGramSearchIndex({...}))
 ```
 
 ## Documentation

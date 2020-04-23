@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/potatopotaro/faunadb-community-utils/issues"
   },
-  "homepage": "https://github.com/potatopotaro/faunadb-community-utils#readme"
+  "homepage": "https://github.com/potatopotaro/faunadb-community-utils#readme",
+  "dependencies": {
+    "lodash.range": "^3.2.0"
+  }
 }
