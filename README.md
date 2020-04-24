@@ -29,6 +29,7 @@ yarn add faunadb-community-utils
 ```
 
 ### Example Usage
+
 ```js
 const faunadb = require("faunadb")
 const { CreateNGramSearchIndex } = require("faunadb-community-tools")(faunadb.query)
@@ -38,10 +39,32 @@ client.query(CreateNGramSearchIndex({...}))
 
 ## Documentation
 
-[Navigate to documentation](https://github.com/potatopotaro/faunadb-community-utils/blob/master/DOCUMENTATION.md)
+[Click here for more thorough documentation](https://github.com/potatopotaro/faunadb-community-utils/blob/master/DOCUMENTATION.md)
 
+# API Glossary
+
+[createPrefixSearchResources](DOCUMENTATION.md#createprefixsearchresources)
+
+[BulkCreate](DOCUMENTATION.md#BulkCreate)
+
+[SelectDeep](DOCUMENTATION.md#SelectDeep)
+
+[CreateNGramSearchIndex](DOCUMENTATION.md#CreateNGramSearchIndex)
+
+[CreatePrefixSearchIndex](DOCUMENTATION.md#CreatePrefixSearchIndex)
+
+[MultiMatch](DOCUMENTATION.md#MultiMatch)
+
+[Characters](DOCUMENTATION.md#Characters)
+
+[NGramGenerator](DOCUMENTATION.md#NGramGenerator)
+
+[StringIndexRange](DOCUMENTATION.md#StringIndexRange)
+
+[StringPrefixGenerator](DOCUMENTATION.md#StringPrefixGenerator)
 
 ## Joining the FaunaDB Community
+
 If you haven't already, I highly suggest joining the official FaunaDB Community Slack.
 
 Slack: https://community-invite.fauna.com
