@@ -14,7 +14,7 @@
 
 > Custom FQL and javascript to help you build in FaunaDB.
 
-## Getting Started
+# Getting Started
 
 ### Install
 
@@ -37,7 +37,7 @@ const { CreateNGramSearchIndex } = require("faunadb-community-tools")(faunadb.qu
 client.query(CreateNGramSearchIndex({...}))
 ```
 
-## Documentation
+# Documentation
 
 [Click here for more thorough documentation](https://github.com/potatopotaro/faunadb-community-utils/blob/master/DOCUMENTATION.md)
 
@@ -63,21 +63,21 @@ client.query(CreateNGramSearchIndex({...}))
 
 [StringPrefixGenerator](DOCUMENTATION.md#StringPrefixGenerator)
 
-## Joining the FaunaDB Community
+# Joining the FaunaDB Community
 
 If you haven't already, I highly suggest joining the official FaunaDB Community Slack.
 
 Slack: https://community-invite.fauna.com
 
-## 🤝 Contributing
+# 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/potatopotaro/faunadb-community-utils/issues). You can also take a look at the [contributing guide](https://github.com/potatopotaro/faunadb-community-utils/blob/master/CONTRIBUTING.md).
 
-## Show your support
+# Show your support
 
 Give a ⭐️ if this project helped you!
 
-## 📝 License
+# 📝 License
 
 Copyright © 2020 [Taro Woollett-Chiba](https://github.com/potatopotaro).<br />
 This project is [MIT](https://github.com/potatopotaro/faunadb-community-utils/blob/master/LICENSE) licensed.
